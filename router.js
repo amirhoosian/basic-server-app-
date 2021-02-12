@@ -6,15 +6,15 @@ const route = (req, res) => {
   const method = req.method;
   if (url === "/") {
     res.write("<html>");
-    res.write('<head> <meta charset="UTF-8"> <title>first page</title></head>');
+    res.write("<head><title>Enter Message</title></head>");
     res.write(
-      '<body><h1>first page</h1><form action="/" method="POST"><input type="text" name="test"></form><button type="submit">Send</button></form></body>'
+      '<body><form action="/message" method="POST"><input type="text" name="message"><button type="submit">Send</button></form></body>'
     );
     res.write("</html>");
     return res.end();
   }
 
-  if (url === "/" && method === "POST") {
+  if (url === "/message" && method === "POST") {
     const body = [];
     req.on("data", (chunk) => {
       body.push(chunk);
