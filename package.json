@@ -1,0 +1,23 @@
+{
+  "name": "basic-server-app-",
+  "version": "1.0.0",
+  "description": "basic node app",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index",
+    "dev": "nodemon index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amirhoosian/basic-server-app-.git"
+  },
+  "author": "amir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amirhoosian/basic-server-app-/issues"
+  },
+  "homepage": "https://github.com/amirhoosian/basic-server-app-#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
